@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar|Fredericka+the+Great');
+@keyframes iconHover {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.20)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#pageContainer {
+    width: 100%;
+    min-height: 100%;
+    background: blue;
+    /* Unsupported */
+    background: repeating-radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0) 1px, rgb(0, 0, 100) 1px, rgb(0, 0, 100) 2px);
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgb(30, 30, 30);
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgb(30, 30, 30);
+}
+
+h4 {
+    font-size: 1.25em;
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    text-shadow: 2px 2px rgb(30, 30, 30);
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgb(30, 30, 30);
+}
+
+i {
+    color: white;
+    text-shadow: 2px 2px rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+i:hover {
+    animation-name: iconHover;
+    animation-duration: .75s;
+    color: rgb(200, 200, 200);
+}
+
+i:active {
+    color: rgb(150, 150, 150);
+}
+
+#timer {
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 6em;
+    font-family: 'Codystar', cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgb(30, 30, 30);
+}
+
+#progressBar {
+    height: 3px;
+}
+
+#progress {
+    height: 3px;
+    width: 0%;
+    background-color: white;
+}
+
+#clock,
+#sessionButton,
+#breakButton {
+    padding-top: 75px;
+    text-align: center;
+}
+
+#playButton {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    #timer {
+        font-size: 4em;
+        width: 150px;
+        height: 75px;
+        line-height: 75px;
+    }
+}
