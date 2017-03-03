@@ -19,8 +19,8 @@ $(document).ready(function () {
     //PLAY BUTTON
     $("#play").click(function () {
         $("#play").toggleClass("fa-play-circle fa-pause-circle");
-        $("#sessionButton").fadeOut("fast");
-        $("#breakButton").fadeOut("fast");
+        $("#sessionButton").animate({ opacity: 0 }, "slow");
+        $("#breakButton").animate({ opacity: 0 }, "slow");
         //to start
         if (!isPlaying) {
             countdown();
@@ -51,13 +51,13 @@ $(document).ready(function () {
         //reset count
         sessionNum = 1;
         breakNum = 0;
-        $("#sessionCount").html(""); //FADE IN & OUT???????????
+        $("#sessionCount").animate({opacity: 0}, "slow");
         //reset play button
         $("#play").removeClass("fa-pause-circle");
         $("#play").addClass("fa-play-circle");
         //make buttons visible again
-        $("#sessionButton").fadeIn("fast");
-        $("#breakButton").fadeIn("fast");
+        $("#sessionButton").animate({ opacity: 1 }, "slow");
+        $("#breakButton").animate({ opacity: 1 }, "slow");
         //reset progress bar
         clearInterval(progressInterval);
         width = 0;
@@ -116,7 +116,8 @@ $(document).ready(function () {
     //TIMER
     $("#timer").html(minutes + ":0" + seconds);
     function countdown() {
-        $("#sessionCount").html("Session # " + sessionNum); //fade in & out????????????
+        $("#sessionCount").html("Session # " + sessionNum);
+        $("#sessionCount").animate({ opacity: 1 }, "slow")
         countdownInterval = setInterval(function () {
             if (seconds > 0) {
                 seconds--;

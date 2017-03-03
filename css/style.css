@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Codystar|Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps');
 @keyframes iconHover {
     0% {
         transform: scale(1)
@@ -26,15 +26,16 @@ body {
 
 h1 {
     font-size: 2em;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Macondo Swash Caps', cursive;
     text-align: center;
     color: white;
     text-shadow: 2px 2px rgb(30, 30, 30);
 }
 
-h3 {
-    font-size: 1.5em;
-    font-family: 'Fredericka the Great', cursive;
+h3,
+p {
+    font-size: 1em;
+    font-family: 'Macondo Swash Caps', cursive;
     text-align: center;
     color: white;
     text-shadow: 2px 2px rgb(30, 30, 30);
@@ -42,15 +43,7 @@ h3 {
 
 h4 {
     font-size: 1.25em;
-    font-family: 'Fredericka the Great', cursive;
-    color: white;
-    text-shadow: 2px 2px rgb(30, 30, 30);
-}
-
-p {
-    font-size: 1em;
-    font-family: 'Fredericka the Great', cursive;
-    text-align: center;
+    font-family: 'Macondo Swash Caps', cursive;
     color: white;
     text-shadow: 2px 2px rgb(30, 30, 30);
 }
@@ -79,7 +72,7 @@ i:active {
     margin-right: auto;
     margin-left: auto;
     font-size: 6em;
-    font-family: 'Codystar', cursive;
+    font-family: 'Macondo Swash Caps', cursive;
     text-align: center;
     color: white;
     text-shadow: 2px 2px rgb(30, 30, 30);
@@ -106,6 +99,10 @@ i:active {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
+}
+
+#sessionCount {
+    opacity: 0;
 }
 
 @media screen and (max-width: 500px) {
